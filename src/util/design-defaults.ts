@@ -1,0 +1,1 @@
+export const bg_gradients = ["from-gray-500", "from-indigo-500", "from-cyan-500", "from-blue-500", "from-purple-500"];

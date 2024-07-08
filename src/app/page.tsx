@@ -1,4 +1,3 @@
-import { Alert, Avatar, Button, Card } from "flowbite-react";
 import PageHeader from "../components/PageHeader/PageHeader";
 
 export default function Home() {

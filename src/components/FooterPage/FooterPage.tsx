@@ -9,7 +9,7 @@ import {
 
 const customFooterTheme: DeepPartial<FlowbiteFooterTheme> = {
   root: {
-    base: "bg-white dark:bg-gray-800 md:flex md:items-center md:justify-between",
+    base: "bg-white dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
   },
 };
 

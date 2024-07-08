@@ -12,12 +12,12 @@ import Link from "next/link";
 
 const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
   root: {
-    base: "p-4 dark:bg-gray-800 md:flex md:items-center md:justify-between",
+    base: "p-4 dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
   },
 };
 
 const NavbarPage = () => (
-  <Navbar theme={customNavbarTheme} rounded>
+  <Navbar theme={customNavbarTheme}>
     <NavbarBrand as={Link} href="https://flowbite-react.com">
       <Image
         src="assets/next.svg"

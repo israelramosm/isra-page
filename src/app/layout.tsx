@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeModeScript } from "flowbite-react";
-import "./globals.css";
 import NavbarPage from "../components/NavbarPage/NavbarPage";
 import FooterPage from "../components/FooterPage/FooterPage";
+import { randomIntFromInterval } from "../util/utils";
+
+import "./globals.css";
+import { bg_gradients } from "../util/design-defaults";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,17 +20,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const randomNumber = randomIntFromInterval(0, 4);
+  const backgroundGradients = bg_gradients[randomNumber];
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <ThemeModeScript />
       </head>
       <body
-        className={`${inter.className} antialiased mx-auto max-w-screen-xl`}
-        style={{ border: "2px solid"}}
+        className={`${inter.className} antialiased bg-gradient-to-b ${backgroundGradients} via-white via-95% to-white`}
       >
         <NavbarPage />
-        <main className="min-h-screen">
+        <main className="relative min-h-screen mx-auto container border-solid border-2">
           {children}
         </main>
         <FooterPage />
