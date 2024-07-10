@@ -1,14 +1,5 @@
 /** @type {import('next').NextConfig} */
-const pathPrefix = process.env.NODE_ENV === 'production'
-? '/isra-page'
-: '';
 
-const nextConfig = {
-    assetPrefix: pathPrefix,
-    basepath: pathPrefix,
-    env: {
-        pathPrefix,
-    },
-};
+const nextConfig = {};
 
 export default nextConfig;
