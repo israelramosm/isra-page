@@ -9,12 +9,12 @@ import {
 
 const customFooterTheme: DeepPartial<FlowbiteFooterTheme> = {
   root: {
-    base: "bg-white dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
+    base: "p-4 pl-0 pr-0 bg-white dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
   },
 };
 
 const FooterPage = () => (
-  <Footer container theme={customFooterTheme}>
+  <Footer theme={customFooterTheme}>
     <FooterCopyright
       href="https://flowbite-react.com/"
       by="Flowbite™"

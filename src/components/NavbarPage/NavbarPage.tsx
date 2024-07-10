@@ -12,22 +12,15 @@ import Link from "next/link";
 
 const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
   root: {
-    base: "p-4 dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
+    base: "p-4 pl-0 pr-0 dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
   },
 };
 
 const NavbarPage = () => (
   <Navbar theme={customNavbarTheme}>
     <NavbarBrand as={Link} href="https://flowbite-react.com">
-      <Image
-        src="assets/next.svg"
-        className="mr-3 h-6 sm:h-9"
-        alt="Flowbite React Logo"
-        width={80}
-        height={80}
-      />
-      <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-        w/Flowbite React
+      <span className=" whitespace-nowrap text-xl font-semibold dark:text-white">
+        Israel Ramos
       </span>
     </NavbarBrand>
     <NavbarToggle />
@@ -38,12 +31,21 @@ const NavbarPage = () => (
       <NavbarLink as={Link} href="/sandbox">
         Sandbox
       </NavbarLink>
-      <NavbarLink as={Link} href="/about">
-        About
+      <NavbarLink as={Link} href="/#experience">
+        Experience
       </NavbarLink>
-      <NavbarLink as={Link} href="/#services">Services</NavbarLink>
-      <NavbarLink as={Link} href="/#pricing">Pricing</NavbarLink>
-      <NavbarLink as={Link}  href="/#contact">Contact</NavbarLink>
+      <NavbarLink as={Link} href="/#skills">
+        Skills
+      </NavbarLink>
+      <NavbarLink as={Link} href="/#languages">
+        Languages
+      </NavbarLink>
+      <NavbarLink as={Link} href="/#education">
+        Education
+      </NavbarLink>
+      <NavbarLink as={Link} href="/#certifications">
+        Certification
+      </NavbarLink>
     </NavbarCollapse>
   </Navbar>
 );

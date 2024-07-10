@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body
-        className={`${inter.className} antialiased bg-gradient-to-b from-gray-500 via-white via-95% to-white`}
+        className={`${inter.className} antialiased`}
       >
         <NavbarPage />
         <main className="relative min-h-screen mx-auto container border-solid border-2">
