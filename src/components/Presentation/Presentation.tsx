@@ -7,6 +7,8 @@ import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import { FaSquarePhone } from "react-icons/fa6";
 
+import profile from '/public/images/profile.jpeg'
+
 const phoneNumber = 3411362414;
 const email = "a.ramos.israel.m@gmail.com";
 const linkedin = "https://www.linkedin.com/in/israel-ramos/";
@@ -84,7 +86,7 @@ export default function Presentation({ title }: { title?: string }) {
       <div className="basis-1/4 order-1 flex items-center justify-center md:items-end w-full">
         <Image
           className="border-2 border-white rounded-full size-24 lg:size-32"
-          src="/assets/profile.jpeg"
+          src={profile}
           alt="Profile"
           width={100}
           height={100}
