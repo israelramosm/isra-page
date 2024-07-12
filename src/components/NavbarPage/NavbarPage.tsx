@@ -7,7 +7,6 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
@@ -19,7 +18,7 @@ const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
 const NavbarPage = () => (
   <Navbar theme={customNavbarTheme}>
     <NavbarBrand as={Link} href="https://flowbite-react.com">
-      <span className=" whitespace-nowrap text-xl font-semibold dark:text-white">
+      <span className=" whitespace-nowrap text-xl font-semibold dark:text-white pl-4 md:pl-2 lg:pl-0">
         Israel Ramos
       </span>
     </NavbarBrand>
