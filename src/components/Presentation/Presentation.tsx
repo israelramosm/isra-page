@@ -56,13 +56,10 @@ export default function Presentation({ title }: { title?: string }) {
 
   useEffect(() => {
     // TODO: add animation after I develop all the components
+    // TODO: Make it sticky after scroll
     // console.log(scrollY);
   }, [scrollY]);
 
-  // Make it sticky after scroll
-  // Move image to left after scroll
-  // Move text to right after scroll
-  // Add contact information
   return (
     <section className="flex flex-col md:flex-row justify-end pb-4 md:py-6 my-5 h-96 shadow-xl shadow-black">
       <div className="order-2 flex flex-col items-center justify-center md:items-end md:justify-end w-full md:mr-8 ">
