@@ -17,7 +17,7 @@ const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
 
 const NavbarPage = () => (
   <Navbar theme={customNavbarTheme}>
-    <NavbarBrand as={Link} href="https://flowbite-react.com">
+    <NavbarBrand as={Link} href="https://israelramosm.github.io/">
       <span className=" whitespace-nowrap text-xl font-semibold dark:text-white pl-4 md:pl-2 lg:pl-0">
         Israel Ramos
       </span>
