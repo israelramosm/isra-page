@@ -7,8 +7,6 @@ import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import { FaSquarePhone } from "react-icons/fa6";
 
-import profile from '/public/images/profile.jpeg'
-
 const phoneNumber = 3411362414;
 const email = "a.ramos.israel.m@gmail.com";
 const linkedin = "https://www.linkedin.com/in/israel-ramos/";
