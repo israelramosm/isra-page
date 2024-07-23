@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {};
+const nextConfig = {
+    basePath: "/isra-page",
+};
 
 export default nextConfig;
