@@ -6,7 +6,7 @@ import Summary from "../components/Summary/Summary";
 export default function Home() {
   const Header = ({ className, title }: { className?: string, title: string }) => (
     <header>
-      <h2 className={`py-8 font-semibold text-xl ${className}`}>{title}</h2>
+      <h2 className={`py-8 font-bold text-xl ${className}`}>{title}</h2>
     </header>
   );
   return (
