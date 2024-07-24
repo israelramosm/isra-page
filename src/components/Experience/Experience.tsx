@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { EXPERIENCE_DATA } from "./ExperienceData";
+import { EXPERIENCE_DATA } from "./experienceData";
 import TitleHeader from "../Headers/TitleHeader";
 
 export default function Experience() {
