@@ -1,3 +1,4 @@
+import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import HomeSection from "../components/HomeSection/HomeSection";
 import Presentation from "../components/Presentation/Presentation";
@@ -36,6 +37,10 @@ export default function Home() {
         <Header title="Experience" />
         <Experience />
       </HomeSection>
+      <HomeSection id="education" className="border-solid border-2">
+        <Header title="Education" />
+        <Education />
+      </HomeSection>
       <HomeSection id="skills" className="border-solid border-2">
         {/* Skills */}
         <p>
@@ -47,15 +52,6 @@ export default function Home() {
       </HomeSection>
       <HomeSection id="language" className="border-solid border-2">
         {/* Languages */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          itaque impedit consequatur laborum architecto, consequuntur, facilis
-          distinctio inventore dolores possimus velit tempora perferendis sit,
-          ea similique deserunt repellat neque eum!
-        </p>
-      </HomeSection>
-      <HomeSection id="education" className="border-solid border-2">
-        {/* Education */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
           itaque impedit consequatur laborum architecto, consequuntur, facilis
