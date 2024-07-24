@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { EXPERIENCE_DATA } from "./experienceData";
 import TitleHeader from "../Headers/TitleHeader";
+import { EXPERIENCE_DATA } from "./experienceData";
 
 export default function Experience() {
   const Content = ({ children }: { children?: ReactNode }) => (
