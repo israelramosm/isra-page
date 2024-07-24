@@ -40,7 +40,7 @@ const contactInformation = [
   },
 ];
 
-export default function Presentation({ title }: { title?: string }) {
+export default function Presentation() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -68,9 +68,9 @@ export default function Presentation({ title }: { title?: string }) {
           <h1 className="font-bold text-base md:text-[1.25rem] lg:text-[1.5rem]">
             Arnulfo Israel Ramos Magaña
           </h1>
-          <h3 className="font-semibold text-[.75rem] md:text-[1rem] lg:text-[1.25rem]">
+          <h2 className="font-semibold text-[.75rem] md:text-[1rem] lg:text-[1.25rem]">
             Fullstack Application Developer
-          </h3>
+          </h2>
         </header>
         <div className="order-3 flex items-center justify-evenly md:justify-end mt-3 w-2/4">
           {contactInformation.map((info, i) => (
