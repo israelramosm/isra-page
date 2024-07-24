@@ -13,7 +13,7 @@ const email = "a.ramos.israel.m@gmail.com";
 const linkedin = "https://www.linkedin.com/in/israel-ramos/";
 const github = "https://github.com/israelramosm";
 
-export const contactInformation = [
+const contactInformation = [
   {
     name: "Gmail",
     value: email,
