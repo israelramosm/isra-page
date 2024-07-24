@@ -5,13 +5,13 @@ export type HeaderTitle = {
 }
 
 export default function TitleHeader({
-  rightText,
   title,
   subtitle,
+  rightText,
 }: {
-  rightText: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
+  rightText?: string;
 }) {
   return (
     <>

@@ -2,6 +2,7 @@ import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import HomeSection from "../components/HomeSection/HomeSection";
 import Presentation from "../components/Presentation/Presentation";
+import Skills from "../components/Skills/Skills";
 import Summary from "../components/Summary/Summary";
 
 export default function Home() {
@@ -43,12 +44,8 @@ export default function Home() {
       </HomeSection>
       <HomeSection id="skills" className="border-solid border-2">
         {/* Skills */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          itaque impedit consequatur laborum architecto, consequuntur, facilis
-          distinctio inventore dolores possimus velit tempora perferendis sit,
-          ea similique deserunt repellat neque eum!
-        </p>
+        <Header title="Skills" />
+        <Skills />
       </HomeSection>
       <HomeSection id="language" className="border-solid border-2">
         {/* Languages */}
