@@ -1,5 +1,7 @@
 import HomeSection from "../components/HomeSection/HomeSection";
+import PageHeader from "../components/SectionHeader/SectionHeader";
 import Presentation from "../components/Presentation/Presentation";
+import Summary from "../components/Summary/Summary";
 
 export default function Home() {
   return (
@@ -9,6 +11,10 @@ export default function Home() {
       <HomeSection id="presentation" className="bg-cover bg-top lg:bg-center bg-[url('/isra-page/images/profile-bg.jpg')]">
         {/* Presentation */}
         <Presentation />
+      </HomeSection>
+      <HomeSection id="summary" className="border-solid border-2">
+        <PageHeader title="Summary" className="font-semibold text-lg" />
+        <Summary />
       </HomeSection>
       <HomeSection id="contact-information" className="border-solid border-2">
         {/* Contact Information */}
