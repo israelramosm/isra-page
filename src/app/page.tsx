@@ -1,5 +1,4 @@
 import HomeSection from "../components/HomeSection/HomeSection";
-import PageHeader from "../components/SectionHeader/SectionHeader";
 import Presentation from "../components/Presentation/Presentation";
 import Summary from "../components/Summary/Summary";
 
@@ -8,12 +7,17 @@ export default function Home() {
     <section className="h-full flex flex-col justify-evenly">
       {/* In this case have to hardcode the isra-page path */}
       {/* Photo by Lukas: https://www.pexels.com/photo/white-apple-keyboard-near-white-cup-917463/ */}
-      <HomeSection id="presentation" className="bg-cover bg-top lg:bg-center bg-[url('/isra-page/images/profile-bg.jpg')]">
+      <HomeSection
+        id="presentation"
+        className="bg-cover bg-top lg:bg-center bg-[url('/isra-page/images/profile-bg.jpg')]"
+      >
         {/* Presentation */}
         <Presentation />
       </HomeSection>
       <HomeSection id="summary" className="border-solid border-2">
-        <PageHeader title="Summary" className="font-semibold text-lg" />
+        <header>
+          <h2 className="py-8 font-semibold text-xl">Summary</h2>
+        </header>
         <Summary />
       </HomeSection>
       <HomeSection id="contact-information" className="border-solid border-2">
