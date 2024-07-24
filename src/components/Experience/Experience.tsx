@@ -8,7 +8,7 @@ export default function Experience() {
   );
 
   return (
-    <div>
+    <>
       {EXPERIENCE_DATA.map((e, i) => (
         <div key={i} className="[&:not(:first-child)]:mt-8">
           <TitleHeader title={e.position} subtitle={e.company} rightText={e.dates} />
@@ -22,6 +22,6 @@ export default function Experience() {
           </Content>
         </div>
       ))}
-    </div>
+    </>
   );
 }
