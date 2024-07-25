@@ -1,5 +1,7 @@
+import Certifications from "../components/Certifications/Certifications";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
+import TitleHeader from "../components/Headers/TitleHeader";
 import HomeSection from "../components/HomeSection/HomeSection";
 import Presentation from "../components/Presentation/Presentation";
 import Skills from "../components/Skills/Skills";
@@ -43,27 +45,16 @@ export default function Home() {
         <Education />
       </HomeSection>
       <HomeSection id="skills" className="border-solid border-2">
-        {/* Skills */}
         <Header title="Skills" />
         <Skills />
       </HomeSection>
       <HomeSection id="language" className="border-solid border-2">
-        {/* Languages */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          itaque impedit consequatur laborum architecto, consequuntur, facilis
-          distinctio inventore dolores possimus velit tempora perferendis sit,
-          ea similique deserunt repellat neque eum!
-        </p>
+        <Header title="Language" />
+        <h3 className="">English - C1</h3>
       </HomeSection>
       <HomeSection id="certifications" className="border-solid border-2">
-        {/* Certifications */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          itaque impedit consequatur laborum architecto, consequuntur, facilis
-          distinctio inventore dolores possimus velit tempora perferendis sit,
-          ea similique deserunt repellat neque eum!
-        </p>
+        <Header title="Certifications" />
+        <Certifications />
       </HomeSection>
     </section>
   );
