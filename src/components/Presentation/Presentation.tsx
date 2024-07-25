@@ -72,7 +72,7 @@ export default function Presentation() {
             Fullstack Application Developer
           </h2>
         </header>
-        <div className="order-3 flex items-center justify-evenly md:justify-end mt-3 w-2/4">
+        {/* <div className="order-3 flex items-center justify-evenly md:justify-end mt-3 w-2/4">
           {contactInformation.map((info, i) => (
             <div key={i} className="md:ml-8">
               <Tooltip content={info.value}>
@@ -80,9 +80,9 @@ export default function Presentation() {
               </Tooltip>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
-      <div className="basis-1/4 order-1 flex items-center justify-center md:items-end w-full">
+      {/* <div className="basis-1/4 order-1 flex items-center justify-center md:items-end w-full">
         <Image
           className="border-2 border-white rounded-full size-24 lg:size-32"
           src={`${IMAGE_PATH}/images/profile.jpeg`}
@@ -90,7 +90,7 @@ export default function Presentation() {
           width={100}
           height={100}
         />
-      </div>
+      </div> */}
     </section>
   );
 }

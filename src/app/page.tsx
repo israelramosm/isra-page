@@ -23,7 +23,7 @@ export default function Home() {
       >
         <Presentation />
       </HomeSection>
-      <HomeSection id="contact-information" className="border-solid border-2">
+      <HomeSection id="contact-information">
         {/* Contact Information */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
@@ -32,27 +32,27 @@ export default function Home() {
           ea similique deserunt repellat neque eum!
         </p>
       </HomeSection>
-      <HomeSection id="summary" className="border-solid border-2">
+      <HomeSection id="summary">
         <Header title="Summary" />
         <Summary />
       </HomeSection>
-      <HomeSection id="experience" className="border-solid border-2">
+      <HomeSection id="experience">
         <Header title="Experience" />
         <Experience />
       </HomeSection>
-      <HomeSection id="education" className="border-solid border-2">
+      <HomeSection id="education">
         <Header title="Education" />
         <Education />
       </HomeSection>
-      <HomeSection id="skills" className="border-solid border-2">
+      <HomeSection id="skills">
         <Header title="Skills" />
         <Skills />
       </HomeSection>
-      <HomeSection id="language" className="border-solid border-2">
+      <HomeSection id="language">
         <Header title="Language" />
-        <h3 className="">English - C1</h3>
+        <h3 className="font-semibold">English - C1</h3>
       </HomeSection>
-      <HomeSection id="certifications" className="border-solid border-2">
+      <HomeSection id="certifications">
         <Header title="Certifications" />
         <Certifications />
       </HomeSection>
