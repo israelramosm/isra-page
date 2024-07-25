@@ -1,3 +1,4 @@
+import BreadcrumbNav from "../components/BreadcrumbNav/BreadcrumbNav";
 import Certifications from "../components/Certifications/Certifications";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
@@ -22,15 +23,6 @@ export default function Home() {
         className="bg-cover bg-top lg:bg-center bg-[url('/isra-page/images/profile-bg.jpg')]"
       >
         <Presentation />
-      </HomeSection>
-      <HomeSection id="contact-information">
-        {/* Contact Information */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          itaque impedit consequatur laborum architecto, consequuntur, facilis
-          distinctio inventore dolores possimus velit tempora perferendis sit,
-          ea similique deserunt repellat neque eum!
-        </p>
       </HomeSection>
       <HomeSection id="summary">
         <Header title="Summary" />

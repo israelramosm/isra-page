@@ -10,7 +10,7 @@ const HomeSection = ({
   return (
     <section
       id={id}
-      className={`w-full pl-4 pr-4 lg:pl-0 lg:pr-0 ${className}`}
+      className={`w-full pl-4 pr-4 md:pl-8 md:pr-8 xl:pl-0 xl:pr-0 ${className}`}
     >
       <div className="mx-auto container">{children}</div>
     </section>
