@@ -40,8 +40,8 @@ export default function Home() {
         <Header title="Skills" />
         <Skills />
       </HomeSection>
-      <HomeSection id="language">
-        <Header title="Language" />
+      <HomeSection id="languages">
+        <Header title="Languages" />
         <h3 className="font-semibold">English - C1</h3>
       </HomeSection>
       <HomeSection id="certifications">

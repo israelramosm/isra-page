@@ -1,5 +1,8 @@
+"use client";
+
 import { DeepPartial } from "@/src/util/types";
 import {
+  Dropdown,
   FlowbiteNavbarTheme,
   Navbar,
   NavbarBrand,
@@ -24,26 +27,25 @@ const NavbarPage = () => (
     </NavbarBrand>
     <NavbarToggle />
     <NavbarCollapse>
-      <NavbarLink as={Link} href="/">
-        Home
-      </NavbarLink>
+      <Dropdown arrowIcon={false} inline label="Home">
+        <Dropdown.Item as={Link} href="/#experience">
+          Experience
+        </Dropdown.Item>
+        <Dropdown.Item as={Link} href="/#education">
+          Education
+        </Dropdown.Item>
+        <Dropdown.Item as={Link} href="/#skills">
+          Skills
+        </Dropdown.Item>
+        <Dropdown.Item as={Link} href="/#languages">
+          Languages
+        </Dropdown.Item>
+        <Dropdown.Item as={Link} href="/#certifications">
+          Certification
+        </Dropdown.Item>
+      </Dropdown>
       <NavbarLink as={Link} href="/sandbox">
         Sandbox
-      </NavbarLink>
-      <NavbarLink as={Link} href="/#experience">
-        Experience
-      </NavbarLink>
-      <NavbarLink as={Link} href="/#skills">
-        Skills
-      </NavbarLink>
-      <NavbarLink as={Link} href="/#languages">
-        Languages
-      </NavbarLink>
-      <NavbarLink as={Link} href="/#education">
-        Education
-      </NavbarLink>
-      <NavbarLink as={Link} href="/#certifications">
-        Certification
       </NavbarLink>
     </NavbarCollapse>
   </Navbar>
