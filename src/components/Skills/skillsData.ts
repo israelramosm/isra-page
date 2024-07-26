@@ -1,40 +1,40 @@
 export interface SkillsI {
   name: string;
-  primary: Array<string>;
-  secondary: Array<string>;
+  primary: string[];
+  secondary: string[];
 }
 
-export const SKILS_DATA: Array<SkillsI> = [
+export const SKILS_DATA: SkillsI[] = [
   {
-    name: "FrontEnd",
+    name: 'FrontEnd',
     primary: [
-      "React",
-      "Redux",
-      "Svelte",
-      "Javascript",
-      "Typescript",
-      "HTML5",
-      "CSS3",
-      "Sass",
+      'React',
+      'Redux',
+      'Svelte',
+      'Javascript',
+      'Typescript',
+      'HTML5',
+      'CSS3',
+      'Sass',
     ],
-    secondary: ["Angularjs", "Bootstrap", "Webpack"],
+    secondary: ['Angularjs', 'Bootstrap', 'Webpack'],
   },
   {
-    name: "Backend",
+    name: 'Backend',
     primary: [
-      "Nodejs",
-      "Javascript",
-      "Typescript",
-      "Nestjs",
-      "Expressjs",
-      "REST",
-      "Cloudant",
+      'Nodejs',
+      'Javascript',
+      'Typescript',
+      'Nestjs',
+      'Expressjs',
+      'REST',
+      'Cloudant',
     ],
-    secondary: ["NoSQL", "kafkajs", "C#", ".NET", "Core", "Java"],
+    secondary: ['NoSQL', 'kafkajs', 'C#', '.NET', 'Core', 'Java'],
   },
   {
-    name: "Development & Operations",
-    primary: ["Git", "Github", "Agile", "Scrum", "IBM Cloud", "Jest", "CI/CD"],
+    name: 'Development & Operations',
+    primary: ['Git', 'Github', 'Agile', 'Scrum', 'IBM Cloud', 'Jest', 'CI/CD'],
     secondary: [],
   },
 ];

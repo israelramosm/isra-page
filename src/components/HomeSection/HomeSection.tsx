@@ -12,7 +12,7 @@ const HomeSection = ({
       id={id}
       className={`w-full pl-4 pr-4 md:pl-8 md:pr-8 xl:pl-0 xl:pr-0 ${className}`}
     >
-      <div className="mx-auto container">{children}</div>
+      <div className="container mx-auto">{children}</div>
     </section>
   );
 };

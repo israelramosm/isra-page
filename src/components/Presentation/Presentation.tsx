@@ -1,39 +1,39 @@
-"use client";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { Tooltip } from "flowbite-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import Link from "next/link";
-import { FaSquarePhone } from "react-icons/fa6";
-import { IMAGE_PATH } from "@/src/util/constants";
+'use client';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import { Tooltip } from 'flowbite-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import Link from 'next/link';
+import { FaSquarePhone } from 'react-icons/fa6';
+import { IMAGE_PATH } from '@/src/util/constants';
 
 const phoneNumber = 3411362414;
-const email = "a.ramos.israel.m@gmail.com";
-const linkedin = "https://www.linkedin.com/in/israel-ramos/";
-const github = "https://github.com/israelramosm";
+const email = 'a.ramos.israel.m@gmail.com';
+const linkedin = 'https://www.linkedin.com/in/israel-ramos/';
+const github = 'https://github.com/israelramosm';
 
 const contactInformation = [
   {
-    name: "Gmail",
+    name: 'Gmail',
     value: email,
     link: `mailto:${email}`,
     icon: <MdEmail className="size-8 lg:size-14" />,
   },
   {
-    name: "LinkedIn",
+    name: 'LinkedIn',
     value: linkedin,
     link: linkedin,
     icon: <FaLinkedin className="size-6 lg:size-12" />,
   },
   {
-    name: "Phone Number",
+    name: 'Phone Number',
     value: `+52 ${phoneNumber}`,
     link: `tel:${phoneNumber}`,
     icon: <FaSquarePhone className="size-6 lg:size-12" />,
   },
   {
-    name: "Github",
+    name: 'Github',
     value: github,
     link: github,
     icon: <FaGithub className="size-6 lg:size-12" />,
@@ -49,9 +49,9 @@ export default function Presentation() {
     };
     handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -62,17 +62,17 @@ export default function Presentation() {
   }, [scrollY]);
 
   return (
-    <section className="flex flex-col md:flex-row justify-end pb-4 md:py-6 my-5 h-96 shadow-xl shadow-black">
-      <div className="order-2 flex flex-col items-center justify-center md:items-end md:justify-end w-full md:mr-8 ">
-        <header className="order-2 flex flex-col items-center md:items-end md:justify-end mt-3 md:mt-0">
-          <h1 className="font-bold text-base md:text-[1.25rem] lg:text-[1.5rem]">
+    <section className="my-5 flex h-96 flex-col justify-end pb-4 shadow-xl shadow-black md:flex-row md:py-6">
+      <div className="order-2 flex w-full flex-col items-center justify-center md:mr-8 md:items-end md:justify-end">
+        <header className="order-2 mt-3 flex flex-col items-center md:mt-0 md:items-end md:justify-end">
+          <h1 className="text-base font-bold md:text-[1.25rem] lg:text-[1.5rem]">
             Arnulfo Israel Ramos Magaña
           </h1>
-          <h2 className="font-semibold text-[.75rem] md:text-[1rem] lg:text-[1.25rem]">
+          <h2 className="text-[.75rem] font-semibold md:text-[1rem] lg:text-[1.25rem]">
             Fullstack Application Developer
           </h2>
         </header>
-        <div className="order-3 flex items-center justify-evenly md:justify-end mt-3 w-2/4">
+        <div className="order-3 mt-3 flex w-2/4 items-center justify-evenly md:justify-end">
           {contactInformation.map((info, i) => (
             <div key={i} className="md:ml-8">
               <Tooltip content={info.value}>
@@ -82,9 +82,9 @@ export default function Presentation() {
           ))}
         </div>
       </div>
-      <div className="basis-1/4 order-1 flex items-center justify-center md:items-end w-full">
+      <div className="order-1 flex w-full basis-1/4 items-center justify-center md:items-end">
         <Image
-          className="border-2 border-white rounded-full size-24 lg:size-32"
+          className="size-24 rounded-full border-2 border-white lg:size-32"
           src={`${IMAGE_PATH}/images/profile.jpeg`}
           alt="Profile"
           width={100}

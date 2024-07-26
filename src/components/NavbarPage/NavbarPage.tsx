@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { DeepPartial } from "@/src/util/types";
+import { DeepPartial } from '@/src/util/types';
 import {
   Dropdown,
   FlowbiteNavbarTheme,
@@ -9,19 +9,19 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
-} from "flowbite-react";
-import Link from "next/link";
+} from 'flowbite-react';
+import Link from 'next/link';
 
 const customNavbarTheme: DeepPartial<FlowbiteNavbarTheme> = {
   root: {
-    base: "p-4 pl-0 pr-0 dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto",
+    base: 'p-4 pl-0 pr-0 dark:bg-gray-800 md:flex md:items-center md:justify-between container mx-auto',
   },
 };
 
 const NavbarPage = () => (
   <Navbar theme={customNavbarTheme}>
     <NavbarBrand as={Link} href="https://israelramosm.github.io/">
-      <span className=" whitespace-nowrap text-xl font-semibold dark:text-white pl-4 md:pl-2 lg:pl-0">
+      <span className="whitespace-nowrap pl-4 text-xl font-semibold dark:text-white md:pl-2 lg:pl-0">
         Israel Ramos
       </span>
     </NavbarBrand>

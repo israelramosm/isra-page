@@ -1,8 +1,8 @@
-export type HeaderTitle = { 
+export type HeaderTitle = {
   rightText: string;
   title: string;
   subtitle: string;
-}
+};
 
 export default function TitleHeader({
   title,
@@ -16,7 +16,7 @@ export default function TitleHeader({
   return (
     <>
       <span className="float-right text-gray-400">{rightText}</span>
-      {title && <h3 className="text-lg font-semibold ">{title}</h3>}
+      {title && <h3 className="text-lg font-semibold">{title}</h3>}
       <h4 className="text-sm">{subtitle}</h4>
     </>
   );

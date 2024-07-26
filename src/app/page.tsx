@@ -1,24 +1,30 @@
-import Certifications from "../components/Certifications/Certifications";
-import Education from "../components/Education/Education";
-import Experience from "../components/Experience/Experience";
-import HomeSection from "../components/HomeSection/HomeSection";
-import Presentation from "../components/Presentation/Presentation";
-import Skills from "../components/Skills/Skills";
-import Summary from "../components/Summary/Summary";
+import Certifications from '../components/Certifications/Certifications';
+import Education from '../components/Education/Education';
+import Experience from '../components/Experience/Experience';
+import HomeSection from '../components/HomeSection/HomeSection';
+import Presentation from '../components/Presentation/Presentation';
+import Skills from '../components/Skills/Skills';
+import Summary from '../components/Summary/Summary';
 
 export default function Home() {
-  const Header = ({ className, title }: { className?: string, title: string }) => (
+  const Header = ({
+    className,
+    title,
+  }: {
+    className?: string;
+    title: string;
+  }) => (
     <header>
-      <h2 className={`py-8 font-bold text-xl ${className}`}>{title}</h2>
+      <h2 className={`py-8 text-xl font-bold ${className}`}>{title}</h2>
     </header>
   );
   return (
-    <section className="h-full flex flex-col justify-evenly">
+    <section className="flex h-full flex-col justify-evenly">
       {/* In this case have to hardcode the path for sub repositories/projects */}
       {/* Photo by Lukas: https://www.pexels.com/photo/white-apple-keyboard-near-white-cup-917463/ */}
       <HomeSection
         id="presentation"
-        className="bg-cover bg-top lg:bg-center bg-[url('/images/profile-bg.jpg')]"
+        className="bg-[url('/images/profile-bg.jpg')] bg-cover bg-top lg:bg-center"
       >
         <Presentation />
       </HomeSection>

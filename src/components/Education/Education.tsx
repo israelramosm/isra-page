@@ -1,4 +1,4 @@
-import TitleHeader from "../Headers/TitleHeader";
+import TitleHeader from '../Headers/TitleHeader';
 
 export default function Education() {
   return (
