@@ -7,7 +7,6 @@ import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
-  NavbarLink,
   NavbarToggle,
 } from 'flowbite-react';
 import Link from 'next/link';
@@ -44,9 +43,6 @@ const NavbarPage = () => (
           Certification
         </Dropdown.Item>
       </Dropdown>
-      <NavbarLink as={Link} href="/sandbox">
-        Sandbox
-      </NavbarLink>
     </NavbarCollapse>
   </Navbar>
 );
